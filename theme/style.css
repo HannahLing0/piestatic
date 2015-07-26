@@ -11,7 +11,10 @@
   overflow: hidden;
   position: relative;
   margin-top: -21px;
-  box-shadow: 5px 5px 5px #888888
+  box-shadow: 5px 5px 5px #888888;
+  background: transparent url("http://realmcharterschool.org/wp-content/uploads/2013/04/Screen-Shot-2013-04-28-at-10.14.09-PM.png") no-repeat center center fixed;
+  background-size: cover;
+
 }
 
 .hero-image-overlay-container {
@@ -33,4 +36,9 @@
   margin-bottom: 100px;
   margin-right: 150px;
   margin-left: 150px;
+}
+
+
+.container{
+  position: relative;
 }
