@@ -1,85 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Theme Preview - Usebootstrap.com</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="theme/bootstrap.css" media="screen">
-    <link rel="stylesheet" href="theme/usebootstrap.css">
-    <link rel="stylesheet" href="theme/style.css">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+
+<head>
+  <meta charset="utf-8">
+  <title>Theme Preview - Usebootstrap.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="theme/bootstrap.css" media="screen">
+  <link rel="stylesheet" href="theme/usebootstrap.css">
+  <link rel="stylesheet" href="theme/style.css">
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
     <script src="bootstrap/html5shiv.js"></script>
     <script src="bootstrap/respond.min.js"></script>
     <![endif]-->
-<!--   </head>
-  <body> -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="scripts/handlebars-v3.0.3.js" />
-    <script src="bootstrap/bootstrap.min.js"></script>
-    <script src="bootstrap/usebootstrap.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="bootstrap/bootstrap.min.js"></script>
+  <script src="bootstrap/usebootstrap.js"></script>
+  <script src="scripts/handlebars-v3.0.3.js" />
 
-    <script id="navbar-template" type="text/x-handlebars-template">
-      <div class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-          <div class="navbar-header">
-            <a href="#" class="navbar-brand">Pioneers in Engineering</a>
-            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
-          </div>
-          <div class="navbar-collapse collapse" id="navbar-main">
-            <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">About Us<span class="caret"></span></a>
-                <ul class="dropdown-menu" aria-labelledby="themes">
-                  <li><a href="#">The PiE Team</a></li>
-                  <li><a href="#">Gallery</a></li>
-                  <li><a href="#">Blog</a></li>
-                </ul>
-              </li>
-              <li>
-                <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Programs <span class="caret"></span></a>
-                  <ul class="dropdown-menu" aria-labelledby="themes">
-                    <li><a href="#">Robotics Competition</a></li>
-                    <li><a href="#">PiE PREP</a></li>
-                    <li><a href="#">Scholarship</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </script>
+</head>
+<body>
 
-      <script id="index-template" type="text/x-handlebars-template">
-        {{> navbar}}
-        <div class="row">
-          <div class= "hero-image">
-            <div class="hero-image-overlay-container">
-              <h1>Bay Area Education Outreach by UC Berkeley Students</h1>
-              <p>
-                Pioneers in Engineering is a non-profit organization that provides a quality STEM learning experience for students in underserved Bay Area high schools. Our primary services are a year-long mentorship program called Prep and an annual 8-week robotics competition. For just $100 per team, we provide a robotics kit that's fully designed and developed in-house, as well as trained college student mentors for each team.
-              </p>
-            </div>
-          </div>
-          <div class="container">
-            <div class="page-header" id="banner">
-              <div class="row">
-                <h1>Congrats Albany and Head-Royce!</h1>
-                <p class="lead">It was a tough competition with many strong competitors, but in the end, it was the alliance of Albany and Head-Royce that ended up earning the title of 2015 Robotics Competition Champion.  PiE would like to thank all of the teams for participating in the 2015 Season!</p>
-              </div>
-            </div>
-          </div>
-        </div>
+<script id="navbar-template" type="text/x-handlebars-template">
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand">Pioneers in Engineering</a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
       </div>
-    </script>
-    <script src="scripts/index.js" />
+      <div class="navbar-collapse collapse" id="navbar-main">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">About Us<span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="themes">
+              <li><a href="#">The PiE Team</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Programs <span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="themes">
+              <li><a href="#">Robotics Competition</a></li>
+              <li><a href="#">PiE PREP</a></li>
+              <li><a href="#">Scholarship</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</script>
+<script id="index-template" type="text/x-handlebars-template">
+  {{> navbar}}
+  <div class="hero-image">
+    <div class="hero-image-overlay-container">
+      <h1>Bay Area Education Outreach by UC Berkeley Students</h1>
+      <p>
+        Pioneers in Engineering is a non-profit organization that provides a quality STEM learning experience for students in underserved Bay Area high schools. Our primary services are a year-long mentorship program called Prep and an annual 8-week robotics competition. For just $100 per team, we provide a robotics kit that's fully designed and developed in-house, as well as trained college student mentors for each team.
+      </p>
+    </div>
+  </div>
+  <div class="page-header" id="banner">
+    <h1>Congrats Albany and Head-Royce!</h1>
+    <p class="lead">It was a tough competition with many strong competitors, but in the end, it was the alliance of Albany and Head-Royce that ended up earning the title of 2015 Robotics Competition Champion. PiE would like to thank all of the teams for participating in the 2015 Season!</p>
+  </div>
+</script>
+<script src="scripts/index.js" />
 
-  </head>
-  <body>
-  </body>
+</body>
 </html>
